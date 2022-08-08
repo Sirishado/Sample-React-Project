@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const page=(
+    <div>
+    <h1 className="header">This is Jsx</h1>
+    <p>This is a paragraph</p>
+    </div>
+    
+)
+const navbar =(
+    <div>
+    <h1>List Of Names</h1>
+    <ul>
+    <li>Menu</li>
+    <li>About</li>
+    <li>contact</li>
+    </ul>
+    </div>
+)
+function image() {
+    return (
+        
+    
+    <div>
+    <img src ="./react-logo.png" width="40px"/>
+    <h1> Iam Learn React Js</h1>
+    <ol>
+    <li> Its a popular library</li>
+    <li> components</li>
+    <li> hooks</li>
+    <li> functions</li>
+    </ol>
+    </div>
+)
+}
+
+ReactDOM.render(
+page,document.getElementById("root")
+)
+ReactDOM.render(
+<image/>,document.getElementById("root")
+)
+document.getElementById("root").append(JSON.stringify(navbar))
+
