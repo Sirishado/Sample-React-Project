@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import Square from './square.js';
 
 
 const page=(
@@ -22,25 +23,26 @@ const navbar =(
 function image() {
     return (
         
+    <Square/>
+    // <div>
+    // <img src ="./react-logo.png" width="40px"/>
+    // <h1> Iam Learn React Js</h1>
+    // <ol>
+    // <li> Its a popular library</li>
+    // <li> components</li>
+    // <li> hooks</li>
+    // <li> functions</li>
+    // </ol>
+    // </div>
     
-    <div>
-    <img src ="./react-logo.png" width="40px"/>
-    <h1> Iam Learn React Js</h1>
-    <ol>
-    <li> Its a popular library</li>
-    <li> components</li>
-    <li> hooks</li>
-    <li> functions</li>
-    </ol>
-    </div>
 )
 }
 
-ReactDOM.render(
-page,document.getElementById("root")
-)
-ReactDOM.render(
-<image/>,document.getElementById("root")
-)
-document.getElementById("root").append(JSON.stringify(navbar))
+// ReactDOM.render(
+// page,document.getElementById("root")
+// )
+// ReactDOM.render(
+// <image/>,document.getElementById("root")
+// )
+// document.getElementById("root").append(JSON.stringify(navbar))
 
